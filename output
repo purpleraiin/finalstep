@@ -1,5 +1,7 @@
 RefiningPilot-Build-$ [dependencies.SemanticVersioning.outputs['SemanticVersioning.setVersion.latest_Version]]'
 
+$[ dependencies.SemanticVersioning.jobs.SemanticVersioning.outputs['setVersion.latest_Version'] ]
+
 
 ----------------------------------------------
 
