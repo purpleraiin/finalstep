@@ -1,0 +1,44 @@
+variables:
+ # General variables
+  - name: agent_pool
+    value: 'Default'
+
+  - name: project_name
+    value: 'RefiningPilot' # Name/Identifier of the application/project
+
+ # Cybersecurity variables
+  - name: security_classification
+    value: 'bronze'   # bronze, silver, gold, platinum
+
+ # Build variables
+  - name: build_path    # .NET Core
+    value: '**/*.sln'
+
+  - name: nuget_config_path
+    value: './PipelineLibraries/Build/nuget.config'
+
+#  - name: docker_file_path
+#    value: './Dockerfile'
+
+  - name: enable_publish_web_projects
+    value: false
+
+  - name: client_app_working_dir
+    value: '**/*/ClientApp'                 # e.g. RepoName/Directory.web/ClientApp
+
+ # Test variables
+  - name: test_path
+    value: '**/*.Tests.csproj'
+
+  - name: test_runner
+    value: 'VSTest'
+
+ # SonarQube variables
+  - name: sonarqube_project_name
+    value: 'RefiningPilotWebApp'
+
+  - name: sonarqube_service_connection
+    value: 'RefiningPilot'
+
+  - name: latest_Version
+    value: ''
