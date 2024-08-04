@@ -1,1 +1,6 @@
 RefiningPilot-Build-$ [dependencies.SemanticVersioning.outputs['SemanticVersioning.setVersion.latest_Version]]'
+
+
+----------------------------------------------
+
+Unrecognized value: ''SemanticVersioning.setVersion.latest_Version]'. Located at position 41 within expression: dependencies.SemanticVersioning.outputs['SemanticVersioning.setVersion.latest_Version]
